@@ -1,0 +1,37 @@
+#mainContent{
+	width:1078px;
+	height:836px;
+	padding:40px 60px 30px 60px;
+	margin:0 auto; 
+	background:#FFF; 
+	margin-bottom:50px;
+}
+#mainContent>h1{
+	height:45px;
+	line-height:45px;
+	font-size:38px;
+	font-family:'Goudy Bookletter 1911',Georgia,serif;
+	margin-bottom:20px; 
+	text-align:center; 
+}
+#mainContent>p{
+	margin:10px 0px;
+}
+#mainContent>blockquote{
+ 	border-left:3px solid #1c7791;
+ 	width:955px;
+ 	height:21px;
+ 	padding-left:20px;
+ 	margin-left:50px;
+ 	color:#666;
+}
+#mainContent>h2{
+	font-family:'Goudy Bookletter 1911',Georgia,serif;
+	color:#3F3F3F;
+}
+#mainContent>ol{
+	margin-left:50px;
+}
+#mainContent>ol>li{
+	list-style-type:circle;
+}    

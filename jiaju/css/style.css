@@ -1,0 +1,511 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none; 
+}
+body{
+	background:url("../images/main-bg.jpg"); 
+	background-attachment:fixed; 
+	background-size:100% 100%; 
+}
+#header{
+	width:1200px;
+	min-height:100px;
+	margin:60px auto 0px; 
+}
+#headerTop{
+	padding-top:60px;
+	border-top:5px solid #FFDF00;
+	background:#FFF; 
+}
+/*logo部分*/
+#logo{
+	width:360px;
+	height:90px;
+	margin:0 auto;
+}
+/*导航栏部分*/
+#nav{
+	background:#FFDF00;
+	margin-top:30px;
+	width:100%;
+	display:block;
+	text-align:center;
+	font-family:'微软雅黑';
+}
+#nav>ul>li{
+	display:inline-block;
+	position:relative;
+}
+#nav>ul>li:nth-child(1):before{
+	height:100%;
+}
+#nav>ul>li:before{
+	content:"";
+	display:block;
+	width:100%;
+	height:0px;
+	position:absolute;
+	background:#FFF; 
+	transition:200ms all linear 0s;
+}
+#nav>ul>li:hover:before{
+	height:100%;
+}
+#nav>ul>li:nth-child(1):hover:before{
+	height:100%;
+}
+#nav>ul>li>a{
+	color:rgba(0,0,0,1);
+	padding:13px 20px;
+	font-weight:700;
+	font-size:14px;
+	letter-spacing:1px;
+	display:block;
+	position:relative;
+}
+#nav>ul>li:nth-child(2)>a{
+	padding-right:40px;
+}
+#nav>ul>li:nth-child(2)>a:before{
+	content:"";
+	display:block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:#FFF; 
+	position:absolute; 
+	right:8px;
+	top:17px;
+	transition:200ms all linear 0s;
+}
+#nav>ul>li:nth-child(2)>a:after{
+	content:"";
+	display:block;
+	width:0px;
+	height:0px;
+	border:4px solid transparent;
+	border-top-color:#FFDF00;
+	position:absolute; 
+	right:10px;
+	top:22px;
+	transition:200ms all ease 0s;
+}
+#nav>ul>li:hover>a:before{
+	background:#000; 
+}
+#nav>ul>li:hover>a:after{
+	border-top-color:#FFF;
+}
+/*折叠二级菜单*/
+.navlist>ul{
+	position:absolute;
+}
+.item{
+	width:170px;
+	height:38px;
+	background:#FFF; 
+	position:relative;
+	display:none;
+}
+.item>a{
+	padding:11px 10px 11px 20px;
+	font-size:14px;
+	font-family:'PT Sans', sans-serif;
+	color:#000;
+	display:block;
+	text-align:left;
+	position:relative;
+}
+.item>a:before{
+	content:"";
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#000;
+	display:block; 
+	position:absolute;
+	right:14px;
+	top:14px;
+}
+.item:hover a:before{
+	background:#FFDF00; 
+}
+.item:hover>a{
+	color:#FFDF00;
+}
+.item>a:after{
+	content:"";
+	display:block;
+	width:0px;
+	height:0px;
+	border:3px solid transparent;
+	border-left-color:#FFF;
+	position:absolute;
+	right:14px;
+	top:16px;
+}
+.item>ul{
+	position:absolute;
+	left:170px;
+	top:0px;
+	width:170px;
+	background:#FFF; 
+}
+.itemA{
+	display:none;
+}
+.itemA>a{
+	padding:11px 10px 11px 20px;
+	font-size:14px;
+	font-family:'PT Sans', sans-serif;
+	color:#000;
+	display:block;
+	width:170px;
+	text-align:left; 
+}
+.itemA>a:hover{
+	color:#FFDF00;
+	transition:200ms all linear 0s;
+}
+/*banner部分*/
+#headerBottom{
+	height:504px;
+}
+#headerBottom>img{
+	width:100%;
+	height:100%;
+}
+#main{
+	min-height:1000px;
+}
+#main-box1{
+	height:580px;
+	padding-bottom:30px;
+	background:#F1F1E6;
+	margin-top:50px; 
+}
+#main-box1>.wrap{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+}
+#basic>li{
+	width:375px;
+	height:277px;
+	background:#FFF;
+	float:left;
+	margin:10px 12px 0px;
+	 
+}
+#basic>li>.basic_img{
+	overflow:hidden; 
+	height:180px;
+}
+#basic>li>.basic_img>img{
+	width:100%;
+	height:100%;
+	transform:scale(1); 
+	transition:1s all 0s linear; 
+}
+#basic>li:hover>.basic_img>img{
+	transform:scale(1.2);
+}
+#basic>li>a{
+	display:block;
+	padding:25px;
+	height:45px;
+	border:1px solid #DDD;
+	color:#4C4C4C;
+	font-family:'Goudy Bookletter 1911',Georgia,serif;
+	font-weight:bold;
+	font-size:25px;
+}
+#word{
+	clear:both; 
+}
+#word>li{
+	width:400px;
+	height:243px;
+	margin:10px 100px;
+	float:left; 
+	margin-top:60px;
+}
+#word>li>h2{
+	margin:30px 0px;
+}
+#word>li>h2>a{
+	font-size:40px;
+	font-weight:500;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+	color:#4C4C4C;
+}
+#word>li>h2>a:hover{
+	color:#000;
+}
+#word>li>p{
+	height:54px;
+	margin:10px 0px;
+}
+#word>li>a{
+	color:#000;
+    font-family:'Racing Sans One', cursive;
+    font-size:16px;
+    margin:20px 0;
+}
+#word>li>a:hover{
+	text-decoration:underline; 
+}
+
+#main-box2{
+	height:457px;
+	background:url('../images/box-style-2.jpg'); 
+	background-attachment:fixed;  
+	overflow:hidden; 
+}
+#main-box2>a{
+	display:block;
+	background:rgba(0, 0, 0, 0.3);
+    padding:20px;
+    color:#fff;
+    font-weight: bold;
+    font-size:50px;
+    width:250px;
+    margin:200px auto;
+}
+#main-box2>a:hover{
+	background:rgba(0, 0, 0, 0.8); 
+}
+#main-box3{
+	height:1028px;
+	background:#F1F1E6; 
+}
+#main-box3>.wrap{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+	overflow:hidden; 
+}
+#main-box3>.wrap>h2{
+	height:48px;
+	margin:30px 0px;
+	text-align:center;
+	line-height:48px;
+	font-size:40px;
+    font-weight:500;
+    font-family:'Goudy Bookletter 1911',Georgia,serif;
+    color:#444; 
+}
+#main-box3>.wrap>ul>li{
+	width:280px;
+	height:280px;
+	margin:10px;
+	float:left;
+	overflow:hidden; 
+	position:relative;
+	cursor:pointer;
+}
+#main-box3>.wrap>ul>li>p{
+	width:100%;
+	height:100%;
+	position:absolute;
+	transition:0.5s all ease 0s;
+}
+.icon-eye:before{
+	font-size:50px;
+	color:transparent;
+	margin-left:120px;
+	margin-top:120px;
+	display:block;
+	transition:0.5s all ease 0s;
+}
+#main-box3>.wrap>ul>li>img{
+	width:100%;
+	height:100%;
+	transform:scale(1);
+	transition:0.5s all ease 0s; 
+	position:absolute;
+}
+#main-box3>.wrap>ul>li:hover>img{
+	transform:scale(1.2); 
+}
+#main-box3>.wrap>ul>li:hover>p{
+	background:rgba(252,223,83,0.5); 
+}
+#main-box3>.wrap>ul>li:hover .icon-eye:before{
+	color:#FFF;
+}
+/*遮罩层*/
+.shadow{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1000;
+	background:rgba(0,0,0,0.5);
+	display:none; 
+}
+.img_wrap{
+	width:0px;
+	height:0px;
+	border-radius:5px;
+	background:#FFF; 
+	box-shadow:0px 0px 0px 5px #FFF;
+	position:absolute; 
+	left:400px;
+	display:none;
+	z-index:2000;
+	opacity:0;
+}
+.img_wrap img{
+	width:100%;
+	height:100%;
+	border-radius:5px; 
+	display:none;
+}
+.prev{
+	width:50%;
+	height:100%; 
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.next{
+	width:50%;
+	height:100%; 
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.imgdails{
+	width:100%;
+	position:absolute;
+	top:508px; 
+}
+.imgdails>span{
+	display:block;
+	width:100%;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.imgdails #num{
+	color:#999;
+	font-size:12px;
+}
+#main-box4{
+	height:268px;
+	padding:30px 0px;
+	background:url("../images/box-style-3.jpg");
+	background-attachment:fixed;   
+}
+#main-box4>.wrap{
+	width:1200px;
+	margin:0 auto; 
+}
+#main-box4>.wrap>.contacts{
+	width:580px;
+	height:248px;
+	overflow:hidden;
+	float:left;
+	margin-left:10px;
+}
+#main-box4>.wrap>.testimonials{
+	float:left;
+	width:580px;
+}
+#main-box4 h2{
+	font-size:40px;
+    font-weight:500;
+    font-family:'Goudy Bookletter 1911',Georgia,serif;
+    color:#FFF;
+    height:48px;
+    margin:30px 0px;
+}
+#main-box4 p{
+	height:36px;
+	color:#FFF;
+	margin:10px 0px;
+}
+#main-box4 a{
+	color:#FFF;
+	font-weight:bold;
+	font-family:'Racing Sans One', cursive;
+}
+#main-box4 a:hover{
+	text-decoration:underline; 
+}
+#footer{
+	width:100%;
+	height:59px;
+	padding:10px 0px;
+	background:#FFF; 
+}
+#footer>.wrap{
+	width:1200px;
+	margin:0 auto;
+}
+#footer p{
+	line-height:59px;
+	float:left;
+}
+#footer p>a{
+	color:#4C4C4C;
+}
+#footer p>a:hover{
+	opacity:0.5; 
+}
+#footer>.wrap>ul{
+	float:right;
+	margin-top:10px;
+}
+#footer>.wrap>ul>li{
+	float:left;
+	margin:0 7px;
+	width:39px;
+	height:39px;
+	background:#FFDF00; 
+	border-radius:50%; 
+}
+#footer>.wrap>ul>li>a{
+	display:block;
+	text-align:center; 
+	line-height:42px;
+}
+#footer>.wrap>ul>li>a:hover{
+	background:rgba(255,255,255,0.5); 
+}
+.icon-twitter:before{
+	display:block;
+	color:#FFF; 
+	font-size:40px;
+	line-height:42px;
+}
+.icon-facebook:before{
+	display:block;
+	color:#FFF; 
+	font-size:30px;
+	line-height:39px;
+}
+.icon-google1:before{
+	display:block;
+	font-size:25px;
+	line-height:38px;
+	color:#FFF; 
+}
+.icon-linkin:before{
+	display:block;
+	color:#FFF;
+	font-size:30px;
+	line-height:39px;
+}
+.icon-creditcard:before{
+	display:block;
+	color:#FFF;
+	font-size:24px;
+}
+
